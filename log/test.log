@@ -355,3 +355,2196 @@ Processing by MuseumsController#show as XML
   Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
 Completed 404 Not Found in 117ms (Views: 1.1ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:07:40 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (6.7ms)
+Completed 200 OK in 765ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:07:41 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 321ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:07:42 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 290ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:07:42 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 672ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:07:43 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 156ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:08:04 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (7.0ms)
+Completed 200 OK in 686ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:08:05 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 350ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:08:05 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 332ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:08:06 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 563ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:08:06 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 94ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:10:12 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (6.6ms)
+Completed 200 OK in 689ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:10:13 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 288ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:10:13 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 300ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:10:13 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 552ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:10:14 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 158ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:21:45 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 476ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:21:46 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 771ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:21:46 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 281ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:21:47 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 326ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:21:47 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 306ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users/new?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:22:16 +0200
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:22:16 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 707ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:22:17 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 308ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:22:17 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 261ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:22:18 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 771ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:22:18 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 101ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:24:35 +0200
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:24:35 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 698ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:24:36 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 299ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:24:36 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 308ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:24:37 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 529ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:24:37 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 96ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:36:08 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (26.6ms)
+Completed 200 OK in 739ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:36:09 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 309ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:36:09 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 286ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:36:09 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 671ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:36:10 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 114ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:36:10 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 7ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:36:10 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:36:10 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:37:28 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 77ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:37:28 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:37:28 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:37:28 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 663ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:37:29 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 300ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:37:29 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 266ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:37:30 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 762ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:37:30 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 181ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:42:42 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (6.3ms)
+Completed 200 OK in 711ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:42:43 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 315ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:42:43 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 263ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:42:44 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 619ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:42:44 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 92ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:42:45 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 7ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:42:45 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:42:45 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:43:32 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+  Rendered shared/not_found.xml.builder (4.5ms)
+Completed 404 Not Found in 473ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:43:33 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 687ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:43:34 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 290ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:43:34 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 289ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:43:34 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 274ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:43:35 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 6ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:43:35 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:43:35 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:46:43 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 46ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:46:43 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 8ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:46:43 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:46:43 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 665ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:46:44 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 309ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:46:44 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 271ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:46:45 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 615ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:46:45 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 180ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:47:15 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (27.0ms)
+Completed 200 OK in 714ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:47:16 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 310ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:47:16 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 285ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:47:16 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 771ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:47:17 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 94ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:47:17 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:47:17 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:47:17 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:48:14 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered users/cannot_create_user.xml.builder (4.6ms)
+Completed 500 Internal Server Error in 65ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:48:14 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:48:14 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:48:15 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 447ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:48:15 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 671ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:48:16 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 303ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:48:16 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 306ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:48:17 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 264ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:51:44 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (26.7ms)
+Completed 200 OK in 745ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:51:45 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 352ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:51:45 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 280ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:51:45 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 510ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:51:46 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 180ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:51:46 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:51:46 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 15:52:27 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 77ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:52:27 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 8ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:52:27 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:52:27 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 650ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:52:28 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 296ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:52:28 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 309ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:52:28 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 549ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:52:29 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 108ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:52:55 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (27.1ms)
+Completed 200 OK in 713ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:52:56 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 277ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:52:56 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 308ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:52:57 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 672ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:52:57 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 183ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:52:57 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:52:57 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 8ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:53:26 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (27.1ms)
+Completed 200 OK in 707ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:53:26 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 286ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:53:27 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 291ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:53:27 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 502ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:53:28 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 99ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users.xml" for 127.0.0.1 at 2012-09-24 15:53:28 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:53:28 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users.xml?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:53:28 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:56:20 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (6.4ms)
+Completed 200 OK in 718ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:56:21 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 313ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:56:22 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 272ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:56:22 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 740ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:56:23 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 95ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 15:56:23 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 44ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:56:23 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:56:23 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:58:10 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+  Rendered shared/not_found.xml.builder (4.4ms)
+Completed 404 Not Found in 476ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:58:11 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 726ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:58:11 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 302ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:58:12 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 331ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:58:12 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 264ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:58:12 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 73ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:58:12 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 15:58:12 +0200
+Processing by UsersController#create as XML
+  Parameters: {"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:59:20 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 62ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 15:59:20 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:59:20 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 662ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 15:59:21 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 288ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 15:59:21 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 350ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 15:59:21 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 564ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 15:59:22 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 98ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 16:00:31 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+  Rendered shared/not_found.xml.builder (4.5ms)
+Completed 404 Not Found in 468ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 16:00:32 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 752ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:00:33 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 304ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:00:33 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 353ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 16:00:33 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 269ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:00:34 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 7ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:00:34 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:01:10 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 46ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:01:10 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 16:01:10 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 5536ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 16:01:16 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 693ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:01:17 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 279ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:01:17 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 287ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 16:01:17 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 264ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:07:29 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (6.5ms)
+Completed 200 OK in 693ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:07:30 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 305ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 16:07:30 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 326ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 16:07:31 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 672ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 16:07:32 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 161ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:07:32 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 406 Not Acceptable in 4ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:07:32 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 406 Not Acceptable in 3ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:07:32 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 3ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+
+
+Started POST "/users?name='luco'&email=''&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:07:32 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"''", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 2ms (Views: 0.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:09:18 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:09:18 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 406 Not Acceptable in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:09:18 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 3ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+
+
+Started POST "/users?name='luco'&email=''&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:09:18 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"''", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 2ms (Views: 0.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:09:18 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 706ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:09:19 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 304ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 16:09:19 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 333ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 16:09:19 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 671ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 16:09:20 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 96ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 16:10:06 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+  Rendered shared/not_found.xml.builder (22.3ms)
+Completed 404 Not Found in 491ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 16:10:07 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 700ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:10:07 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 269ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:10:08 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 302ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 16:10:08 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 290ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:10:08 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+
+
+Started POST "/users?name='luco'&email=''&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:10:08 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"''", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 3ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users?name='luco'&email='cacca@culo.it'&password=[FILTERED]&password_confirm=[FILTERED]" for 127.0.0.1 at 2012-09-24 16:10:08 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"'luco'", "email"=>"'cacca@culo.it'", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 3ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:10:08 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (19.5ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 24 Sep 2012 14:10:08 UTC +00:00], ["email", "cacca@culo.it"], ["name", "luco"], ["password_digest", "$2a$10$Brm81DFm.gEO5L.1W0RPi.MVvjY6BnhrplB2QR.UV4CVtX3gWwk9W"], ["updated_at", Mon, 24 Sep 2012 14:10:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 132ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:12:16 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (26.8ms)
+Completed 200 OK in 716ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:12:16 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 297ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 16:12:17 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 311ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 16:12:17 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 649ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 16:12:18 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 117ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:12:18 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 14:12:18 UTC +00:00], ["email", "cacca@culo.it"], ["name", "luco"], ["password_digest", "$2a$10$SwcoKRIJBQo3abFYqzNLkeiM1MHnKwDAp4n/M/24hlJJqtCeH/eke"], ["updated_at", Mon, 24 Sep 2012 14:12:18 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 88ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:12:18 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 406 Not Acceptable in 82ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:12:18 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 103ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:12:18 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 81ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:16:06 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 83ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:16:06 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 82ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:16:06 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 82ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:16:06 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 24 Sep 2012 14:16:06 UTC +00:00], ["email", "cacca@culo.it"], ["name", "luco"], ["password_digest", "$2a$10$tTKCDVyzrtBeiAU5nbDit.Ib0VKNpmDXTttf2LWSUZzEkrT8yuIZG"], ["updated_at", Mon, 24 Sep 2012 14:16:06 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 83ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 16:16:06 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 484ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 16:16:07 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 774ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:16:08 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 284ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:16:08 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 321ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 16:16:08 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 270ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('luco@gmail.com') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:18:20 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 14:18:20 UTC +00:00], ["email", "cacca@culo.it"], ["name", "luco"], ["password_digest", "$2a$10$11wrBi.5mG6il4cKuq.UP.aeOqlFJFGepwbMhpeivMz4R3VGeV0f2"], ["updated_at", Mon, 24 Sep 2012 14:18:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 201 Created in 83ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:18:20 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 24 Sep 2012 14:18:20 UTC +00:00], ["email", "cacca@culo.it"], ["name", "luco"], ["password_digest", "$2a$10$.apjRLoXsICTHNuWVqDSn.qeqTZquBK37x2OXlgCGH/vJXRZShNlq"], ["updated_at", Mon, 24 Sep 2012 14:18:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 201 Created in 81ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:18:20 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 81ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:18:20 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"cacca@culo.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cacca@culo.it') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 406 Not Acceptable in 81ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 16:18:20 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"luco", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 406 Not Acceptable in 81ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:18:20 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 694ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 16:18:21 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 303ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=4535422" for 127.0.0.1 at 2012-09-24 16:18:21 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"4535422"}
+Completed 200 OK in 263ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 16:18:21 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 200 OK in 520ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/museums/MUSEOadfadfadfadfadfad.xml" for 127.0.0.1 at 2012-09-24 16:18:22 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
+Completed 404 Not Found in 102ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m

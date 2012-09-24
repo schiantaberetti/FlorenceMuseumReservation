@@ -1,5 +1,7 @@
 Museums::Application.routes.draw do
 
+	resources :users, :only => [:create]
+
 	resources :museums, :only => [:index, :show]
 
 	root :to => "museums_controller#index"
