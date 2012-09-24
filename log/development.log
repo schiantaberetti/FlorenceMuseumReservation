@@ -1,0 +1,1644 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/museums" for 127.0.0.1 at 2012-09-24 09:50:26 +0200
+Connecting to database specified by database.yml
+Processing by MuseumsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (undefined local variable or method `getMuseumsList' for #<MuseumsController:0x007fb2681504b0>):
+  app/controllers/museums_controller.rb:4:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.4ms)
+
+
+Started GET "/museums" for 127.0.0.1 at 2012-09-24 09:52:08 +0200
+Processing by MuseumsController#index as HTML
+Completed 406 Not Acceptable in 1019ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/museums" for 127.0.0.1 at 2012-09-24 09:52:48 +0200
+Processing by MuseumsController#index as HTML
+Completed 406 Not Acceptable in 496ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 09:52:51 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 358ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 09:53:10 +0200
+Processing by MuseumsController#index as XML
+Completed 500 Internal Server Error in 757ms
+
+NoMethodError (undefined method `nil?' for #<RDF::Query::Solution:0x007fb269045628>):
+  app/controllers/museums_controller.rb:7:in `block (2 levels) in index'
+  app/controllers/museums_controller.rb:6:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 09:54:31 +0200
+Processing by MuseumsController#index as XML
+Completed 200 OK in 514ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:06:15 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:7: syntax error, unexpected tIVAR, expecting keyword_do or '{' or '('
+			format.xml { render :xml=> buildXMLMuseums @museums}
+			                                                   ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:07:24 +0200
+Processing by MuseumsController#index as XML
+Completed 500 Internal Server Error in 5461ms
+
+TypeError (can't convert Symbol into Integer):
+  app/helpers/museums_helper.rb:25:in `new'
+  app/helpers/museums_helper.rb:25:in `buildXMLMuseums'
+  app/controllers/museums_controller.rb:7:in `block (2 levels) in index'
+  app/controllers/museums_controller.rb:6:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.7ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:22:36 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (16.2ms)
+Completed 200 OK in 5504ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:23:30 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (24.9ms)
+Completed 500 Internal Server Error in 470ms
+
+ActionView::Template::Error (undefined local variable or method `root_uri' for #<#<Class:0x007fb268f0f678>:0x007fb268789390>):
+    3:   @museums.each do |museum|
+    4:     xml.museum do
+    5:       xml.name museum
+    6:       xml.uri "#{root_uri}#{museums_path}/#{museum}"
+    7:     end
+    8:   end
+    9: end
+  app/views/museums/index.xml.builder:6:in `block (3 levels) in _app_views_museums_index_xml_builder___3278871240008775205_70202116566640'
+  app/views/museums/index.xml.builder:4:in `block (2 levels) in _app_views_museums_index_xml_builder___3278871240008775205_70202116566640'
+  app/views/museums/index.xml.builder:3:in `each'
+  app/views/museums/index.xml.builder:3:in `block in _app_views_museums_index_xml_builder___3278871240008775205_70202116566640'
+  app/views/museums/index.xml.builder:2:in `_app_views_museums_index_xml_builder___3278871240008775205_70202116566640'
+  app/controllers/museums_controller.rb:6:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.4ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:23:44 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (4.1ms)
+Completed 500 Internal Server Error in 5508ms
+
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x007fb268f0f678>:0x007fb268f227a0>):
+    3:   @museums.each do |museum|
+    4:     xml.museum do
+    5:       xml.name museum
+    6:       xml.uri "#{root_path}#{museums_path}/#{museum}"
+    7:     end
+    8:   end
+    9: end
+  app/views/museums/index.xml.builder:6:in `block (3 levels) in _app_views_museums_index_xml_builder___3278871240008775205_70202120835360'
+  app/views/museums/index.xml.builder:4:in `block (2 levels) in _app_views_museums_index_xml_builder___3278871240008775205_70202120835360'
+  app/views/museums/index.xml.builder:3:in `each'
+  app/views/museums/index.xml.builder:3:in `block in _app_views_museums_index_xml_builder___3278871240008775205_70202120835360'
+  app/views/museums/index.xml.builder:2:in `_app_views_museums_index_xml_builder___3278871240008775205_70202120835360'
+  app/controllers/museums_controller.rb:6:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:24:34 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (4.0ms)
+Completed 500 Internal Server Error in 455ms
+
+ActionView::Template::Error (undefined local variable or method `root_url' for #<#<Class:0x007fb268f0f678>:0x007fb26903e148>):
+    3:   @museums.each do |museum|
+    4:     xml.museum do
+    5:       xml.name museum
+    6:       xml.uri "#{root_url}#{museums_path}/#{museum}"
+    7:     end
+    8:   end
+    9: end
+  app/views/museums/index.xml.builder:6:in `block (3 levels) in _app_views_museums_index_xml_builder___3278871240008775205_70202121381840'
+  app/views/museums/index.xml.builder:4:in `block (2 levels) in _app_views_museums_index_xml_builder___3278871240008775205_70202121381840'
+  app/views/museums/index.xml.builder:3:in `each'
+  app/views/museums/index.xml.builder:3:in `block in _app_views_museums_index_xml_builder___3278871240008775205_70202121381840'
+  app/views/museums/index.xml.builder:2:in `_app_views_museums_index_xml_builder___3278871240008775205_70202121381840'
+  app/controllers/museums_controller.rb:6:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.3ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:26:20 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (22.9ms)
+Completed 200 OK in 481ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:26:56 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (22.9ms)
+Completed 200 OK in 5533ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:27:14 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (16.9ms)
+Completed 200 OK in 565ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:39:34 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (16.3ms)
+Completed 200 OK in 477ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:39:59 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (16.7ms)
+Completed 200 OK in 5499ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:40:26 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (17.0ms)
+Completed 200 OK in 507ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 10:40:33 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 500 Internal Server Error in 291ms
+
+SPARQL::Client::MalformedQuery (<html><head><title>Apache Tomcat/7.0.27 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 400 - Parse error: 
+select ?name where { VILLA_MEDICEA_DI_CAREGGI &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; ?name.  VILLA_MEDICEA_DI_CAREGGI &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei&gt;}
+Lexical error at line 1, column 46.  Encountered: &quot; &quot; (32), after : &quot;VILLA_MEDICEA_DI_CAREGGI&quot;</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>Parse error: 
+select ?name where { VILLA_MEDICEA_DI_CAREGGI &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; ?name.  VILLA_MEDICEA_DI_CAREGGI &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei&gt;}
+Lexical error at line 1, column 46.  Encountered: &quot; &quot; (32), after : &quot;VILLA_MEDICEA_DI_CAREGGI&quot;</u></p><p><b>description</b> <u>The request sent by the client was syntactically incorrect (Parse error: 
+select ?name where { VILLA_MEDICEA_DI_CAREGGI &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; ?name.  VILLA_MEDICEA_DI_CAREGGI &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei&gt;}
+Lexical error at line 1, column 46.  Encountered: &quot; &quot; (32), after : &quot;VILLA_MEDICEA_DI_CAREGGI&quot;).</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.27</h3></body></html>):
+  app/helpers/museums_helper.rb:33:in `getMuseum'
+  app/controllers/museums_controller.rb:11:in `show'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 10:43:57 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 500 Internal Server Error in 294ms
+
+NoMethodError (undefined method `!=' for #<RDF::Query::Solution:0x007fb2696a9640>):
+  app/helpers/museums_helper.rb:35:in `getMuseum'
+  app/controllers/museums_controller.rb:11:in `show'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.5ms)
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 10:44:46 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+Completed 500 Internal Server Error in 812ms
+
+ActionView::MissingTemplate (Missing template museums/show, application/show with {:locale=>[:en], :formats=>[:xml], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/home/baldo/Projects/rails_projects/museums/app/views"
+):
+  app/controllers/museums_controller.rb:12:in `show'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 10:51:20 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+  Rendered museums/show.xml.builder (1.4ms)
+Completed 200 OK in 844ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 10:51:49 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (16.0ms)
+Completed 200 OK in 471ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 10:51:56 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERA_DEL_DUOMO"}
+Completed 500 Internal Server Error in 479ms
+
+NoMethodError (undefined method `!=' for #<RDF::Query::Solution:0x007fb2680dc4e8>):
+  app/helpers/museums_helper.rb:40:in `getMuseum'
+  app/controllers/museums_controller.rb:11:in `show'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 10:53:37 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERA_DEL_DUOMO"}
+  Rendered museums/show.xml.builder (0.3ms)
+Completed 200 OK in 935ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 11:03:28 +0200
+Processing by MuseumsController#index as XML
+Completed 500 Internal Server Error in 436ms
+
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  app/controllers/museums_controller.rb:7:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 11:03:44 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (2.2ms)
+Completed 200 OK in 476ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=1" for 127.0.0.1 at 2012-09-24 11:04:08 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"1"}
+Completed 500 Internal Server Error in 15396ms
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/museums_controller.rb:8:in `+'
+  app/controllers/museums_controller.rb:8:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/museums.xml?page=1" for 127.0.0.1 at 2012-09-24 11:05:00 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"1"}
+Completed 500 Internal Server Error in 441ms
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/museums_controller.rb:8:in `+'
+  app/controllers/museums_controller.rb:8:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/museums.xml?page=1" for 127.0.0.1 at 2012-09-24 11:05:02 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"1"}
+Completed 500 Internal Server Error in 328ms
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/museums_controller.rb:8:in `+'
+  app/controllers/museums_controller.rb:8:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/museums.xml?page=1" for 127.0.0.1 at 2012-09-24 11:05:58 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"1"}
+Completed 500 Internal Server Error in 431ms
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/museums_controller.rb:8:in `+'
+  app/controllers/museums_controller.rb:8:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/museums.xml?page=1" for 127.0.0.1 at 2012-09-24 11:06:11 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"1"}
+Completed 500 Internal Server Error in 5503ms
+
+TypeError (String can't be coerced into Fixnum):
+  app/controllers/museums_controller.rb:8:in `*'
+  app/controllers/museums_controller.rb:8:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/museums.xml?page=1" for 127.0.0.1 at 2012-09-24 11:07:28 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"1"}
+Completed 500 Internal Server Error in 460ms
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/museums_controller.rb:8:in `+'
+  app/controllers/museums_controller.rb:8:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/museums.xml?page=1" for 127.0.0.1 at 2012-09-24 11:08:36 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"1"}
+  Rendered museums/index.xml.builder (2.2ms)
+Completed 200 OK in 432ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml?page=45252452" for 127.0.0.1 at 2012-09-24 11:09:29 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"45252452"}
+  Rendered museums/index.xml.builder (0.6ms)
+Completed 500 Internal Server Error in 438ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: xml.instruct!
+    2: xml.museums do
+    3:   @museums.each do |museum|
+    4:     xml.museum do
+    5:       xml.name museum
+    6:       xml.uri "#{museums_url}/#{museum}.xml"
+  app/views/museums/index.xml.builder:3:in `block in _app_views_museums_index_xml_builder___3278871240008775205_70202120943640'
+  app/views/museums/index.xml.builder:2:in `_app_views_museums_index_xml_builder___3278871240008775205_70202120943640'
+  app/controllers/museums_controller.rb:9:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/museums.xml?page=45252452" for 127.0.0.1 at 2012-09-24 11:10:44 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"45252452"}
+  Rendered museums/index.xml.builder (0.8ms)
+Completed 500 Internal Server Error in 451ms
+
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    5:       xml.name museum
+    6:       xml.uri "#{museums_url}/#{museum}.xml"
+    7:     end
+    8:   end unless @museums.empty?
+    9: end
+  app/views/museums/index.xml.builder:8:in `block in _app_views_museums_index_xml_builder___3278871240008775205_20228520'
+  app/views/museums/index.xml.builder:2:in `_app_views_museums_index_xml_builder___3278871240008775205_20228520'
+  app/controllers/museums_controller.rb:9:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/museums.xml?page=45252452" for 127.0.0.1 at 2012-09-24 11:11:31 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"45252452"}
+  Rendered museums/index.xml.builder (0.8ms)
+Completed 500 Internal Server Error in 439ms
+
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+    5:       xml.name museum
+    6:       xml.uri "#{museums_url}/#{museum}.xml"
+    7:     end
+    8:   end if @museums.size > 0
+    9: end
+  app/views/museums/index.xml.builder:8:in `block in _app_views_museums_index_xml_builder___3278871240008775205_70202122946480'
+  app/views/museums/index.xml.builder:2:in `_app_views_museums_index_xml_builder___3278871240008775205_70202122946480'
+  app/controllers/museums_controller.rb:9:in `index'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.2ms)
+
+
+Started GET "/museums.xml?page=45252452" for 127.0.0.1 at 2012-09-24 11:13:38 +0200
+Processing by MuseumsController#index as XML
+  Parameters: {"page"=>"45252452"}
+  Rendered museums/index.xml.builder (0.4ms)
+Completed 200 OK in 493ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums" for 127.0.0.1 at 2012-09-24 11:14:01 +0200
+Processing by MuseumsController#index as HTML
+Completed 406 Not Acceptable in 5482ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 11:14:09 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (2.0ms)
+Completed 200 OK in 352ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 11:14:19 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERA_DEL_DUOMO"}
+  Rendered museums/show.xml.builder (1.0ms)
+Completed 200 OK in 877ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPEddRA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 11:14:23 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPEddRA_DEL_DUOMO"}
+  Rendered museums/show.xml.builder (1.7ms)
+Completed 500 Internal Server Error in 302ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: xml.instruct!
+    2: xml.museum do
+    3: 	xml.name @museum.name
+    4: 	xml.phone @museum.phone if @museum.phone
+    5: 	xml.address @museum.address if @museum.address
+    6: 	xml.typology @museum.typology if @museum.typology
+  app/views/museums/show.xml.builder:3:in `block in _app_views_museums_show_xml_builder__3813316418812971550_70202120288920'
+  app/views/museums/show.xml.builder:2:in `_app_views_museums_show_xml_builder__3813316418812971550_70202120288920'
+  app/controllers/museums_controller.rb:15:in `show'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.3ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPEddRA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 11:15:04 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPEddRA_DEL_DUOMO"}
+  Rendered museums/show.xml.builder (1.1ms)
+Completed 200 OK in 329ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPEddRA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 11:20:38 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected tIDENTIFIER, expecting keyword_then or ';' or '\n'
+			if @museum format.xml # show.xml.builder
+			                 ^
+/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:17: syntax error, unexpected keyword_else, expecting keyword_end
+			else render :status => 404
+			    ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPEddRA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 11:20:56 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+			if @museum { format.xml } # show.xml.builder
+			            ^
+/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected '}', expecting keyword_end
+			if @museum { format.xml } # show.xml.builder
+			                         ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPEddRA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 11:21:35 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+			if @museum do format.xml end # show.xml.builder
+			             ^
+/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:20: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPEddRA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 11:22:07 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:20: syntax error, unexpected $end, expecting keyword_end):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPEddRA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 11:22:33 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:20: syntax error, unexpected $end, expecting keyword_end):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPEddRA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 11:23:45 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPEddRA_DEL_DUOMO"}
+  Rendered museums/show.xml.builder (0.1ms)
+Completed 406 Not Acceptable in 306ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 11:33:26 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (2.0ms)
+Completed 200 OK in 441ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:48:39 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 500 Internal Server Error in 304ms
+
+ActionView::MissingTemplate (Missing template museums/not_found, application/not_found with {:locale=>[:en], :formats=>[:xml], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/home/baldo/Projects/rails_projects/museums/app/views"
+):
+  app/controllers/museums_controller.rb:17:in `block in show'
+  app/controllers/museums_controller.rb:15:in `show'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:50:08 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+  Rendered museums/not_found.xml.builder (1.0ms)
+Completed 406 Not Acceptable in 297ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:51:14 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:xml] instead. (called from realtime at /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered museums/not_found.xml.builder (0.1ms)
+Completed 406 Not Acceptable in 305ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:51:30 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+  Rendered museums/not_found.xml.builder (0.4ms)
+Completed 406 Not Acceptable in 5357ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:53:18 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+  Rendered shared/not_found.xml.builder (1.1ms)
+Completed 406 Not Acceptable in 298ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:53:20 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+  Rendered shared/not_found.xml.builder (0.2ms)
+Completed 406 Not Acceptable in 157ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:53:21 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+  Rendered shared/not_found.xml.builder (0.2ms)
+Completed 406 Not Acceptable in 172ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:53:53 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+  Rendered shared/not_found.xml.builder (0.4ms)
+Completed 406 Not Acceptable in 306ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:53:54 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+  Rendered shared/not_found.xml.builder (0.2ms)
+Completed 406 Not Acceptable in 158ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:53:55 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+  Rendered shared/not_found.xml.builder (0.2ms)
+Completed 406 Not Acceptable in 161ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:54:26 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 406 Not Acceptable in 290ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:54:27 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 406 Not Acceptable in 156ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:55:10 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 406 Not Acceptable in 295ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:55:39 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 406 Not Acceptable in 310ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:55:40 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 406 Not Acceptable in 174ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:56:01 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 406 Not Acceptable in 304ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:56:02 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 406 Not Acceptable in 175ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI" for 127.0.0.1 at 2012-09-24 11:56:27 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 406 Not Acceptable in 5360ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI" for 127.0.0.1 at 2012-09-24 11:58:42 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 406 Not Acceptable in 5351ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/VILLA_czxczEDICEA_DI_CAREGGI.xml" for 127.0.0.1 at 2012-09-24 11:58:48 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"VILLA_czxczEDICEA_DI_CAREGGI"}
+Completed 406 Not Acceptable in 158ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums" for 127.0.0.1 at 2012-09-24 12:01:49 +0200
+Processing by MuseumsController#index as HTML
+Completed 406 Not Acceptable in 443ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 12:01:53 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (2.2ms)
+Completed 200 OK in 347ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 12:02:43 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (2.0ms)
+Completed 200 OK in 469ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPExdsadaRA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:34:31 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPExdsadaRA_DEL_DUOMO"}
+Completed 500 Internal Server Error in 298ms
+
+ArgumentError (wrong number of arguments(1 for 0)):
+  app/controllers/museums_controller.rb:16:in `nil?'
+  app/controllers/museums_controller.rb:16:in `block in show'
+  app/controllers/museums_controller.rb:15:in `show'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 12:35:10 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (2.0ms)
+Completed 200 OK in 5527ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPExdsadaRA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:35:16 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPExdsadaRA_DEL_DUOMO"}
+  Rendered museums/show.xml.builder (0.3ms)
+Completed 200 OK in 329ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums.xmlhttp://localhost:3000/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:37:31 +0200
+
+ActionController::RoutingError (No route matches [GET] "/museums.xmlhttp:/localhost:3000/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/museums.xmlhttp://localhost:3000/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:38:46 +0200
+
+ActionController::RoutingError (No route matches [GET] "/museums.xmlhttp:/localhost:3000/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 12:38:58 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (2.1ms)
+Completed 200 OK in 442ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:39:11 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERA_DEL_DUOMO"}
+  Rendered museums/show.xml.builder (0.3ms)
+Completed 200 OK in 877ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:39:23 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERA_DEL_DUOMO"}
+Completed 406 Not Acceptable in 5925ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:41:09 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected '}', expecting keyword_then or ';' or '\n'
+...r :xml => "<ciao>cacca</ciao>"}#:file => 'shared/not_found',...
+...                               ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:41:25 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected '}', expecting keyword_then or ';' or '\n'
+...r :xml => "<ciao>cacca</ciao>"} #:file => 'shared/not_found'...
+...                               ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:42:19 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected tASSOC, expecting ')'
+...if @museum.nil? render (:xml => "<ciao>cacca</ciao>")} #:fil...
+...                               ^
+/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected ')', expecting '}'
+... (:xml => "<ciao>cacca</ciao>")} #:file => 'shared/not_found...
+...                               ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:42:49 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected tASSOC, expecting ')'
+... @museum.nil? { render (:xml => "<ciao>cacca</ciao>")}} #:fi...
+...                               ^
+/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected ')', expecting '}'
+... (:xml => "<ciao>cacca</ciao>")}} #:file => 'shared/not_foun...
+...                               ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:44:03 +0200
+
+SyntaxError (/home/baldo/Projects/rails_projects/museums/app/controllers/museums_controller.rb:16: syntax error, unexpected '}', expecting keyword_then or ';' or '\n'
+...il? { render :text => "ciao" }} #:file => 'shared/not_found'...
+...                               ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4249343506381642279__call__910194863201651030__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:44:33 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERA_DEL_DUOMO"}
+  Rendered museums/show.xml.builder (0.3ms)
+Completed 200 OK in 872ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:45:01 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERA_DEL_DUOMO"}
+Completed 500 Internal Server Error in 5962ms
+
+NameError (undefined local variable or method `museum' for #<MuseumsController:0x007fb268d31ea0>):
+  app/controllers/museums_controller.rb:16:in `block (2 levels) in show'
+  app/controllers/museums_controller.rb:15:in `show'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:45:18 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERA_DEL_DUOMO"}
+  Rendered museums/show.xml.builder (0.9ms)
+Completed 200 OK in 925ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERAsdfsd_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:45:24 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERAsdfsd_DEL_DUOMO"}
+  Rendered museums/index.xml.builder (0.4ms)
+Completed 200 OK in 349ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERAsdfsd_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:45:51 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERAsdfsd_DEL_DUOMO"}
+Completed 500 Internal Server Error in 350ms
+
+ActionView::MissingTemplate (Missing template museums/not_found, application/not_found with {:locale=>[:en], :formats=>[:xml], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/home/baldo/Projects/rails_projects/museums/app/views"
+):
+  app/controllers/museums_controller.rb:16:in `block (2 levels) in show'
+  app/controllers/museums_controller.rb:15:in `show'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERAsdfsd_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:46:02 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERAsdfsd_DEL_DUOMO"}
+  Rendered shared/not_found.xml.builder (0.4ms)
+Completed 200 OK in 350ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERAsdfsd_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:46:26 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERAsdfsd_DEL_DUOMO"}
+  Rendered shared/not_found.xml.builder (0.4ms)
+Completed 404 Not Found in 349ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERAsdfsd_DEL_DUOMO.xml" for 127.0.0.1 at 2012-09-24 12:46:30 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DELL'OPERAsdfsd_DEL_DUOMO"}
+  Rendered shared/not_found.xml.builder (0.2ms)
+Completed 404 Not Found in 160ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-09-24 12:47:19 +0200
+Served asset /rails.png - 304 Not Modified (6ms)
+
+
+Started GET "/museums.xml" for 127.0.0.1 at 2012-09-24 12:47:25 +0200
+Processing by MuseumsController#index as XML
+  Rendered museums/index.xml.builder (2.0ms)
+Completed 200 OK in 455ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DI_STORIA_NATURALE_-_SEZIONE_DI_MINERALOGIA_E_LITOLOGIA.xml" for 127.0.0.1 at 2012-09-24 12:47:35 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DI_STORIA_NATURALE_-_SEZIONE_DI_MINERALOGIA_E_LITOLOGIA"}
+  Rendered museums/show.xml.builder (0.3ms)
+Completed 200 OK in 905ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/museums/MUSEO_DI_STORIA_NAxczcTURALE_-_SEZIONE_DI_MINERALOGIA_E_LITOLOGIA.xml" for 127.0.0.1 at 2012-09-24 12:47:52 +0200
+Processing by MuseumsController#show as XML
+  Parameters: {"id"=>"MUSEO_DI_STORIA_NAxczcTURALE_-_SEZIONE_DI_MINERALOGIA_E_LITOLOGIA"}
+  Rendered shared/not_found.xml.builder (0.4ms)
+Completed 404 Not Found in 5350ms (Views: 4.0ms | ActiveRecord: 0.0ms)

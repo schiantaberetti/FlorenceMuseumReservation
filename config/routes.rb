@@ -1,4 +1,8 @@
 Museums::Application.routes.draw do
+
+	resources :museums, :only => [:index, :show]
+
+	root :to => "museums_controller#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
