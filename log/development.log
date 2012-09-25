@@ -5098,3 +5098,13 @@ WARNING: Can't verify CSRF token authenticity
   [1m[35m (0.1ms)[0m  SELECT "reservations".id FROM "reservations" WHERE "reservations"."user_id" = 1
   Rendered shared/notify.xml.builder (0.2ms)
 Completed 401 Unauthorized in 82ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120924125043)
+Migrating to AddIndexToUsersName (20120924125427)
+Migrating to CreateReservations (20120924155817)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("reservations")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')

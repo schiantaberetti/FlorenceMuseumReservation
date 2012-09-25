@@ -5,7 +5,7 @@ Museums::Application.routes.draw do
 
 	resources :museums, :only => [:index, :show]
 
-	root :to => "museums#index"
+	root :to => 'museums#index'
 
 	match 'profile' => 'users#show'
 	match 'about' => 'museums#about'
