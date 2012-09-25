@@ -1,0 +1,59 @@
+#navbar ul {
+margin: 0px;
+padding: 0px;
+padding-left: 150px;
+}
+#navbar li {
+list-style-type: none;
+display: inline;
+margin: 0 5px 0 5px;
+}
+#navbar li a {
+color: #123456
+text-decoration: none;
+}
+#navbar a:hover {
+text-decoration: underline;
+color: #000000;
+}
+
+#container {
+margin: 0 auto;
+width: 50%;
+height:auto;
+background-color:#FFFFFF;
+z-index:500000;
+height:auto;
+overflow: hidden;
+min-width:600px;
+}
+#next {
+float: right;
+padding-top: 30px;
+}
+#prev {
+float: left;
+padding-top: 30px;
+}
+li {
+list-style-type: none;
+}
+form {
+float: center;
+padding-top: 30px;
+}
+.form_field {
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:150px;
+margin:2px 0 20px 10px;
+}
+.label {
+display:block;
+font-weight:bold;
+text-align:right;
+width:150px;
+float:left;
+}

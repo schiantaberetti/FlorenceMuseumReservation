@@ -14,4 +14,6 @@ class MuseumsController < ApplicationController
 #			format.xml { render 'shared/not_found', status: 404 if @museum.nil? }
 #		end
 	end
+	def about
+	end
 end

@@ -1,7 +1,8 @@
+<h1>Florence Museums</h1>
 <ul class="museums-list">
 	<% slice_page(@museums,museums_path).each do |mus| %>
 		<li><%= link_to mus, "#{museums_path}/#{mus}" %></li>
 	<% end %>
 </ul>
-<%= link_to "next",@next_page %>
-<%= link_to "prev",@prev_page %>
+<%= link_to "next",@next_page, id:'next' %>
+<%= link_to "prev",@prev_page, id: 'prev' %>

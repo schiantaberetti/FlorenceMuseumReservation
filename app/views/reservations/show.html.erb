@@ -1,6 +1,6 @@
 <h1>Reservation</h1>
 <ul>
-<li>museum: <%= @reservation.museum %></li>
+<li>museum: <%= link_to @reservation.museum, "#{museums_path}/#{@reservation.museum.gsub(' ','_')}" %></li>
 <li>date: <%= @reservation.date %></li>
 <li>number of people: <%= @reservation.num_of_people %></li>
 </ul>
