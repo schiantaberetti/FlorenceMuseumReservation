@@ -1,6 +1,6 @@
 xml.instruct!
 xml.museums do
-  @museums.each do |museum|
+  slice_pages(@museums,museums_url).each do |museum|
     xml.museum do
       xml.name museum
       xml.uri "#{museums_url}/#{museum}"

@@ -1,0 +1,6 @@
+<h1> Error in creation of the reservation </h1>
+<ul>
+	<% 	@reservation.errors.full_messages.each do |msg| %>
+	<li><%= msg %></li>
+	<% end %>
+</ul>

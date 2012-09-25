@@ -1,6 +1,6 @@
 xml.instruct!
 xml.reservations do
-  @reservations.each do |res|
+  slice_page(@reservations,reservations_url).each do |res|
 		xml.reservation "#{reservations_url}/#{res.id}"
 #    xml.reservation do
 #      xml.museum res.museum

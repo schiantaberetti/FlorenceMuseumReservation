@@ -3,7 +3,7 @@ class MuseumsController < ApplicationController
 
 	def index
 		@museums=getMuseumsList
-				@museums = slice_page(@museums)
+			#	@museums = slice_page(@museums,museums_url)
 	#	respond_to do |format|
 #			format.xml # index.xml.builder 
 #		end

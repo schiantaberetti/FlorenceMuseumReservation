@@ -1,0 +1,7 @@
+<ul class="museums-list">
+	<% slice_page(@reservations,reservations_path).each do |res| %>
+		<li><%= link_to "reservation of #{res.created_at}", "#{reservations_path}/#{res.id}" %></li>
+	<% end %>
+</ul>
+<%= link_to "next",@next_page %>
+<%= link_to "prev",@prev_page %>

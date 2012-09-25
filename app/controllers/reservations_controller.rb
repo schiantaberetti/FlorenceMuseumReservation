@@ -3,7 +3,7 @@ class ReservationsController < ApplicationController
 	before_filter :authenticate
 
 	def index
-		@reservations=slice_page(@current_user.reservations)
+		@reservations=@current_user.reservations#=slice_page(@current_user.reservations,reservations_url)
 		#respond_to (:xml)
 	end
 	
@@ -13,7 +13,7 @@ class ReservationsController < ApplicationController
 	end
 	
 	def create
-		return render_notify(406,:error,'museum not available') unless getMuseumsList.include? params[:museum]
+		return render_notify(406,:error,"museum not available: #{params[:museum]}") unless getMuseumsList.include? params[:museum].gsub(' ','_')
 		@reservation = @current_user.reservations.new(museum: params[:museum],date: params[:date],num_of_people: params[:num_of_pipl])
 		if @reservation.save
 			return render_notify(201,:success,"reservation created")

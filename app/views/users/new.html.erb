@@ -1,2 +1,12 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Create new user</h1>
+<form name='make_user' action='<%= users_path %>' method='post'>
+	name:
+	<input type='text' value='' name='name'/>
+	email:
+	<input type='text' value='' name='email'/>
+	password:
+	<input type='password' value='' name='password'/>
+	password confirmation:
+	<input type='password' value='' name='password_confirmation'/>
+	<input type='submit' value='create your user'/>
+</form>

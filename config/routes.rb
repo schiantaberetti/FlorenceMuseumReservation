@@ -1,11 +1,13 @@
 Museums::Application.routes.draw do
 
 	resources :reservations, :only => [:index, :show, :create, :destroy]
-	resources :users, :only => [:create]
+	resources :users, :only => [:create, :show, :new]
 
 	resources :museums, :only => [:index, :show]
 
-	root :to => "museums_controller#index"
+	root :to => "museums#index"
+
+	match 'profile' => 'users#show'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

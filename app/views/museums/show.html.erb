@@ -1,0 +1,15 @@
+<ul>
+	<li>name: <%= @museum.name %></li>
+	<li>phone number: <%= @museum.phone %></li>
+	<li>address: <%= @museum.address %></li>
+	<li><%= link_to "website", "#{@museum.webLink}" %></li>
+	<li>typology: <%= @museum.typology %></li>
+</ul>
+<form name='make_reservation' action='<%= reservations_path %>' method='post'>
+	date:
+	<input type='text' value='' name='date'/>
+	number of people:
+	<input type='text' value='' name='num_of_pipl'/>
+	<input type='hidden' value='<%= @museum.name %>' name='museum' />
+	<input type='submit' value='make reservation'/>
+</form>
