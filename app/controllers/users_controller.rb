@@ -1,11 +1,10 @@
 class UsersController < ApplicationController
   def create
-		@user = User.new(params[:user])
+		@user = User.new(name: params[:name],email: params[:email],password: params[:password],password_confirmation: params[:password_confirmation])
 		if @user.save
-			flash[:success]="user created"
-			render :xml => 'notify', :status => 201
+			return render_notify(201,:success,"user created")
 		else
-			render :xml => 'cannot_create_user', :status => 406
+			return render 'cannot_create_user', :status => 406
 		end
   end
 end

@@ -2548,3 +2548,265 @@ Processing by MuseumsController#show as XML
   Parameters: {"id"=>"MUSEOadfadfadfadfadfad"}
 Completed 404 Not Found in 102ms (Views: 3.2ms | ActiveRecord: 0.0ms)
   [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reservations" 
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-25 08:38:45 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"reservation"=>{"date"=>"25-9-2012", "num_of_people"=>"3", "museum"=>"http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO.xml"}}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reservations" 
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-25 08:38:45 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"reservation"=>{"date"=>"", "num_of_people"=>"3", "museum"=>"http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO.xml"}}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (22.5ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 06:45:05 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$4YQYCYZuD/a5Iro05L6krOL1gz4zsqe9V.gkXwZOAl.Pp/4BCMdLy"], ["updated_at", Tue, 25 Sep 2012 06:45:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Sep 2012 06:45:05 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$4Pyv6FWv9NKSwrm2Zql9xOk.DW8Ba1pWgj3bW14aGxgwJtIHvHrq2"], ["updated_at", Tue, 25 Sep 2012 06:45:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 06:45:05 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$jBP9zJqDxqZbm0V47747zeYtbO3MTp2EwoHT9x4I0bl6XP3QvTepG"], ["updated_at", Tue, 25 Sep 2012 06:45:05 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-25 08:45:05 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"reservation"=>{"date"=>"25-9-2012", "num_of_people"=>"3", "museum"=>"http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO.xml"}}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 06:46:03 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$ugkCirDjEyqtTp9B72ldiuQwm.cB.Orc5iysRpUUufA5e4xgKJXxC"], ["updated_at", Tue, 25 Sep 2012 06:46:03 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Sep 2012 06:46:03 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$MluEKuUPwBbJEaqvENvxfOdWJ8VSQXnD0fgBv6/nAmjTcmReAS2CG"], ["updated_at", Tue, 25 Sep 2012 06:46:03 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-25 08:46:03 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"reservation"=>{"date"=>"25-9-2012", "num_of_people"=>"3", "museum"=>"http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO.xml"}}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reservations" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Sep 2012 06:46:03 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$UCrwmlF3UhGytjOyB9TQVOes2Qcu1.1uBPkShDirMIgbdi4Xp.7mO"], ["updated_at", Tue, 25 Sep 2012 06:46:03 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 06:47:28 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$5gXGD64HlxK1MiZm7U0Ea.Qmxaij5e9NWUc7mSain5mIfUizfqKZG"], ["updated_at", Tue, 25 Sep 2012 06:47:28 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-25 08:47:28 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"reservation"=>{"date"=>"25-9-2012", "num_of_people"=>"3", "museum"=>"http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO.xml"}}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 06:47:28 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$eKtTrvhP9JedjUrpsY/6XOyPTVI/pZkCJlhRZBoiR26G3f/ezec9e"], ["updated_at", Tue, 25 Sep 2012 06:47:28 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Sep 2012 06:47:28 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$2X7tMeBhFtGKA8HEickN4.c0EFFIQGoOEzVdJuvIAOWZD4IFjVdz."], ["updated_at", Tue, 25 Sep 2012 06:47:28 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 06:48:20 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$k.0/KThjJwKYnkcd.1/Tn.EKqfXaAXaJF52d1z9UmkuMuIgQQq5iq"], ["updated_at", Tue, 25 Sep 2012 06:48:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-25 08:48:20 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"reservation"=>{"date"=>"25-9-2012", "num_of_people"=>"3", "museum"=>"http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO.xml"}}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 24ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 06:48:20 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$GJ0690iS9nz8tgBsltJQN...vtRGIsaPDOcb21cJDKfDd3RAf8di2"], ["updated_at", Tue, 25 Sep 2012 06:48:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Sep 2012 06:48:20 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$0oEcwAhvHYpRMvLqRKIEdOVswrL2D1YJPovMaUctzrwZ3yElDolo."], ["updated_at", Tue, 25 Sep 2012 06:48:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 06:50:54 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$VMDkjDngOSXXFypsIeJvV.b2yLhi9AwzI7a9yRJpZZu6KHZU7Md9C"], ["updated_at", Tue, 25 Sep 2012 06:50:54 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-25 08:50:54 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"reservation"=>{"date"=>"25-9-2012", "num_of_people"=>"3", "museum"=>"http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO.xml"}}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 06:50:54 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$Lepx9LqgVcyDJWSILbyPwOswc2LyztQmehqAiOS9BKp4BV5oejV1G"], ["updated_at", Tue, 25 Sep 2012 06:50:54 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Sep 2012 06:50:54 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$3/Tlzg5sc2BtUr54Lc3vDems12/kPmj.fGujAq9VWSJFlUaLtaFm2"], ["updated_at", Tue, 25 Sep 2012 06:50:54 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 06:54:05 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$em/F3W18Z5sSdA2RPHZj6.CZQk5QXFKU.p14eHCXae0SOcyaC/EZK"], ["updated_at", Tue, 25 Sep 2012 06:54:05 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Sep 2012 06:54:05 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$iHnVPvHElgGG5cmRG3WLCeUy1MEQzLojOHvE3LPiljzi8UVY1W4lW"], ["updated_at", Tue, 25 Sep 2012 06:54:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-25 08:54:05 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"reservation"=>{"date"=>"25-9-2012", "num_of_people"=>"3", "museum"=>"http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO.xml"}}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reservations" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Sep 2012 06:54:06 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$HPK.5kQCPu.FBprZ.syNlejCzeWpPwQ1I/4FlpepqG2AoIebSSiS2"], ["updated_at", Tue, 25 Sep 2012 06:54:06 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reservations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 07:22:11 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$2QWJgxcw/PYM2P37n2/bxu7GMFp.JU0KhYVA0EOkR3XZB6rfU90cy"], ["updated_at", Tue, 25 Sep 2012 07:22:11 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reservations" 
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-25 09:22:11 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"reservation"=>{"date"=>"25-9-2012", "num_of_people"=>"3", "museum"=>"http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO.xml"}}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a@b.c') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 25 Sep 2012 07:23:52 UTC +00:00], ["email", "a@b.c"], ["name", "luco"], ["password_digest", "$2a$10$wxD54sRPpoNmrL4Z94POw.7dvIujWa/imUCPQpzQqDCT6DTcWaWMy"], ["updated_at", Tue, 25 Sep 2012 07:23:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reservations" 
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-25 09:23:52 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"reservation"=>{"date"=>"25-9-2012", "num_of_people"=>"3", "museum"=>"http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO.xml"}}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

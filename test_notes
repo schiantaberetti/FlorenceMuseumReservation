@@ -1,0 +1,3 @@
+curl -d "name=luco&email=baldo@lilik.it&password=t&password_confirmation=t" http://localhost:3000/users
+
+curl -d "museum=louvre&date=25-5-56&num_of_pipl=5" "http://luco:t@localhost:3000/reservations"

@@ -1,5 +1,6 @@
 Museums::Application.routes.draw do
 
+	resources :reservations, :only => [:index, :show, :create, :destroy]
 	resources :users, :only => [:create]
 
 	resources :museums, :only => [:index, :show]
