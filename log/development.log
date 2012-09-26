@@ -5108,3 +5108,79 @@ Migrating to CreateReservations (20120924155817)
   [1m[35m (0.0ms)[0m  PRAGMA index_list("reservations")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
   [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (185.5ms)[0m  CREATE TABLE "reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "museum" varchar(255), "user_id" integer, "date" varchar(255), "num_of_people" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (129.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (131.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (131.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (131.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (132.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120924155817')
+  [1m[36m (148.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120924125427')[0m
+  [1m[35m (132.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120924125043')
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120924125043)
+Migrating to AddIndexToUsersName (20120924125427)
+Migrating to CreateReservations (20120924155817)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("reservations")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-25 18:53:17 +0200
+Connecting to database specified by database.yml
+Processing by MuseumsController#index as HTML
+  Rendered museums/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 702ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /museums.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /jquery.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /reservations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /museums.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /reservations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
+Served asset /application.js - 304 Not Modified (6ms)
