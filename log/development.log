@@ -5184,3 +5184,1161 @@ Served asset /users.js - 304 Not Modified (2ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-25 18:53:19 +0200
 Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-26 08:38:48 +0200
+Connecting to database specified by database.yml
+Processing by MuseumsController#index as HTML
+  Rendered museums/index.html.erb within layouts/application (35.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 1134ms (Views: 345.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /application.css - 200 OK (23ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /museums.css - 200 OK (3ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /reservations.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /jquery.js - 200 OK (11ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /custom.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /museums.js - 200 OK (1ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /reservations.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:38:50 +0200
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI" for 127.0.0.1 at 2012-09-26 08:38:52 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+ERROR: compiling _app_views_museums_show_html_erb__4485681346747089373_70152252703900 RAISED /home/baldo/Projects/rails_projects/museums/app/views/museums/show.html.erb:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/baldo/Projects/rails_projects/museums/app/views/museums/show.html.erb:19: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_museums_show_html_erb__4485681346747089373_70152252703900(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "museums/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('	<h1>');@output_buffer.append= ( @museum.name );@output_buffer.safe_concat('</h1>
+<ul>
+	<li>phone number: ');@output_buffer.append= ( @museum.phone );@output_buffer.safe_concat('</li> '); if @museum.phone ;@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	<li>address: ');@output_buffer.append= ( @museum.address );@output_buffer.safe_concat('</li>'); if @museum.address ;@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	<li>');@output_buffer.append= ( link_to "website", "#{@museum.webLink}" );@output_buffer.safe_concat('</li>'); if @museum.webLink ;@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	<li>typology: ');@output_buffer.append= ( @museum.typology );@output_buffer.safe_concat('</li>'); if @museum.typology ;@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</ul>
+<form name=\'make_reservation\' action=\'');@output_buffer.append= ( reservations_path );@output_buffer.safe_concat('\' method=\'post\'>
+	date:
+	<input type=\'text\' value=\'\' name=\'date\'/>
+	number of people:
+	<input type=\'text\' value=\'\' name=\'num_of_pipl\'/>
+	<input type=\'hidden\' value=\'');@output_buffer.append= ( @museum.name );@output_buffer.safe_concat('\' name=\'museum\' />
+	<input type=\'submit\' value=\'make reservation\'/>
+</form>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `module_eval'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `compile'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/template.rb:232:in `compile!'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/template.rb:144:in `block in render'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/notifications.rb:125:in `instrument'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/template.rb:143:in `render'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:88:in `render'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:167:in `process_action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:414:in `_run__4378117145991982532__process_action__4587825116860092736__callbacks'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:121:in `process'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:45:in `process'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal.rb:203:in `dispatch'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_controller/metal.rb:246:in `block in action'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/cookies.rb:339:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activerecord-3.2.8/lib/active_record/query_cache.rb:64:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activerecord-3.2.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `_run__3916066785544541499__call__2256001784549688659__callbacks'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered museums/show.html.erb within layouts/application (25.2ms)
+Completed 500 Internal Server Error in 852ms
+
+ActionView::Template::Error (/home/baldo/Projects/rails_projects/museums/app/views/museums/show.html.erb:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/baldo/Projects/rails_projects/museums/app/views/museums/show.html.erb:19: syntax error, unexpected $end, expecting keyword_end):
+    14: 	<input type='submit' value='make reservation'/>
+    15: </form>
+  actionpack (3.2.8) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.8) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.8) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.8) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.8) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__4378117145991982532__process_action__4587825116860092736__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3916066785544541499__call__2256001784549688659__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/baldo/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI" for 127.0.0.1 at 2012-09-26 08:40:26 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+  Rendered museums/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 852ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:40:27 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/museums/VILLA_MEDICEA_DI_CAREGGI" for 127.0.0.1 at 2012-09-26 08:41:17 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"VILLA_MEDICEA_DI_CAREGGI"}
+  Rendered museums/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 888ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /reservations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /museums.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:18 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/museums/MUSEO_DELL%27OPERA_DEL_DUOMO" for 127.0.0.1 at 2012-09-26 08:41:27 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"MUSEO_DELL'OPERA_DEL_DUOMO"}
+  Rendered museums/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 870ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:28 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/museums/MUSEO_DEL_BIGALLO" for 127.0.0.1 at 2012-09-26 08:41:45 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"MUSEO_DEL_BIGALLO"}
+  Rendered museums/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 939ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /museums.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:41:46 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-26 08:42:05 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"date"=>"31-34-2355", "num_of_pipl"=>"4", "museum"=>"MUSEO DEL BIGALLO"}
+WARNING: Can't verify CSRF token authenticity
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /museums.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:15 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-26 08:42:31 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"ciao", "email"=>"ciao@ciao.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER('ciao') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('ciao@ciao.it') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (15.2ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 26 Sep 2012 06:42:32 UTC +00:00], ["email", "ciao@ciao.it"], ["name", "ciao"], ["password_digest", "$2a$10$IOaWCHV5h3hKrgNBzEWWk.qyJ6tlUo45Z3my/brzqsRGYUuAHjvVu"], ["updated_at", Wed, 26 Sep 2012 06:42:32 UTC +00:00]]
+  [1m[36m (181.4ms)[0m  [1mcommit transaction[0m
+  Rendered shared/notify.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 201 Created in 435ms (Views: 28.6ms | ActiveRecord: 239.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:32 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Processing by MuseumsController#index as HTML
+  Rendered museums/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 454ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:37 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/museums/PALAZZO_DAVANZATI" for 127.0.0.1 at 2012-09-26 08:42:39 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"PALAZZO_DAVANZATI"}
+  Rendered museums/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 972ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:40 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-26 08:42:46 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"date"=>"31-34-2355", "num_of_pipl"=>"4", "museum"=>"PALAZZO DAVANZATI"}
+WARNING: Can't verify CSRF token authenticity
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2012-09-26 08:42:50 +0200
+Processing by ReservationsController#create as HTML
+  Parameters: {"date"=>"31-34-2355", "num_of_pipl"=>"4", "museum"=>"PALAZZO DAVANZATI"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'ciao' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reservations" ("created_at", "date", "museum", "num_of_people", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 26 Sep 2012 06:42:51 UTC +00:00], ["date", "31-34-2355"], ["museum", "PALAZZO DAVANZATI"], ["num_of_people", 4], ["updated_at", Wed, 26 Sep 2012 06:42:51 UTC +00:00], ["user_id", 1]]
+  [1m[36m (191.7ms)[0m  [1mcommit transaction[0m
+  Rendered shared/notify.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 201 Created in 872ms (Views: 23.6ms | ActiveRecord: 192.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:51 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Processing by UsersController#show as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'ciao' LIMIT 1
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 105ms (Views: 20.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /custom.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:42:55 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Processing by ReservationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = 'ciao' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reservations" WHERE "reservations"."user_id" = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reservations" WHERE "reservations"."user_id" = 1[0m
+  [1m[35mReservation Load (0.1ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 1
+  Rendered reservations/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 153ms (Views: 71.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /reservations.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:43:00 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Processing by ReservationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = 'ciao' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reservations" WHERE "reservations"."user_id" = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reservations" WHERE "reservations"."user_id" = 1[0m
+  [1m[35mReservation Load (0.1ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = 1
+  Rendered reservations/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 94ms (Views: 8.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /museums.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:44:37 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-26 08:45:38 +0200
+Processing by MuseumsController#index as HTML
+  Rendered museums/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 459ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:39 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Processing by MuseumsController#index as HTML
+  Rendered museums/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 481ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:51 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/museums?page=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Processing by MuseumsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendered museums/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 491ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /reservations.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:45:54 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = 'ciao' LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 87ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
+Served asset /application.js - 304 Not Modified (1ms)

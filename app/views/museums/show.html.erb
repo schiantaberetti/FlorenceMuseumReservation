@@ -1,9 +1,17 @@
+	<h1><%= @museum.name %></h1>
 <ul>
-	<li>name: <%= @museum.name %></li>
-	<li>phone number: <%= @museum.phone %></li>
+	<% if @museum.phone %>
+		<li>phone number: <%= @museum.phone %></li> 
+	<% end %>
+	<% if @museum.address %>
 	<li>address: <%= @museum.address %></li>
+	<% end %>
+	<% if @museum.webLink %>
 	<li><%= link_to "website", "#{@museum.webLink}" %></li>
+	<% end %>
+	<% if @museum.typology %>
 	<li>typology: <%= @museum.typology %></li>
+	<% end %>
 </ul>
 <form name='make_reservation' action='<%= reservations_path %>' method='post'>
 	date:
