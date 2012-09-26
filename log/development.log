@@ -6342,3 +6342,232 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:46:05 +0200
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-26 08:51:08 +0200
+Processing by MuseumsController#index as HTML
+  Rendered museums/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 479ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /museums.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:09 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/museums/PALAZZO_DAVANZATI" for 127.0.0.1 at 2012-09-26 08:51:16 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"PALAZZO_DAVANZATI"}
+  Rendered museums/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 983ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:51:17 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/museums/PALAZZO_DAVANZATI" for 127.0.0.1 at 2012-09-26 08:53:26 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"PALAZZO_DAVANZATI"}
+  Rendered museums/show.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 938ms
+
+ActionView::Template::Error (undefined method `model_name' for RDF::Literal:Class):
+    7: 	<li>address: <%= @museum.address %></li>
+    8: 	<% end %>
+    9: 	<% if @museum.webLink %>
+    10: 	<li><%= link_to "website", @museum.webLink %></li>
+    11: 	<% end %>
+    12: 	<% if @museum.typology %>
+    13: 	<li>typology: <%= @museum.typology %></li>
+  app/views/museums/show.html.erb:10:in `_app_views_museums_show_html_erb__4485681346747089373_70152319072400'
+
+
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/baldo/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/museums/PALAZZO_DAVANZATI" for 127.0.0.1 at 2012-09-26 08:54:29 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"PALAZZO_DAVANZATI"}
+  Rendered museums/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 914ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /users.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /museums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:54:30 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/museums/PALAZZO_DAVANZATI" for 127.0.0.1 at 2012-09-26 08:55:05 +0200
+Processing by MuseumsController#show as HTML
+  Parameters: {"id"=>"PALAZZO_DAVANZATI"}
+  Rendered museums/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 1006ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.css?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /museums.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /reservations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/museums.js?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /museums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /reservations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 08:55:06 +0200
+Served asset /application.js - 304 Not Modified (4ms)

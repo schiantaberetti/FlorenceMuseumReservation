@@ -7,7 +7,7 @@
 	<li>address: <%= @museum.address %></li>
 	<% end %>
 	<% if @museum.webLink %>
-	<li><%= link_to "website", "#{@museum.webLink}" %></li>
+	<li><%= link_to "website", "http://#{@museum.webLink}" %></li>
 	<% end %>
 	<% if @museum.typology %>
 	<li>typology: <%= @museum.typology %></li>
