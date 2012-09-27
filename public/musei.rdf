@@ -1,0 +1,23 @@
+<rdf:RDF
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:db="http://sr-vm091-opend.comune.fi.it:8080/resource/"
+	xmlns:pa="http://oldsites.comune.fi.it/resource/vocab/"
+	xmlns:d2r="http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:map="file:mapping3.n3#"
+	xmlns:data="http://sr-vm091-opend.comune.fi.it:8080/resource/data/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:vocab="http://sr-vm091-opend.comune.fi.it:8080/resource/vocab/" >
+
+	<rdf:Description about="http://sr-vm091-opend.comune.fi.it:8080/resource/musei/CENACOLO_DI_ANDREA_DEL_SARTO">
+			<rdf:type  rdf:resource=data:musei />
+      <rdfs:label>CENACOLO DI ANDREA DEL SARTO</rdfs:label>
+	</rdf:Description>
+
+	<rdf:Description about="http://sr-vm091-opend.comune.fi.it:8080/resource/musei/CAPPELLE_MEDICEE">
+			<rdf:type  rdf:resource=data:musei />
+      <rdfs:label>CAPPELLE MEDICEE</rdfs:label>
+	</rdf:Description>
+
+</rdf:RDF>

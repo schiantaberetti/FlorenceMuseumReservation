@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<museums>
+  <museum>
+    <name>VILLA MEDICEA DI CAREGGI</name>
+    <uri>http://localhost:3000/museums/VILLA_MEDICEA_DI_CAREGGI</uri>
+  </museum>
+  <museum>
+    <name>MUSEO DELL'OPERA DEL DUOMO</name>
+    <uri>http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO</uri>
+  </museum>
+</museums>

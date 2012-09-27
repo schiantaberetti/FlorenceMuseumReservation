@@ -50,10 +50,16 @@ border:solid 1px #aacfe4;
 width:150px;
 margin:2px 0 20px 10px;
 }
-.label {
+form .label {
 display:block;
 font-weight:bold;
 text-align:right;
 width:150px;
 float:left;
+}
+.operation {
+border-style: dotted;
+}
+.operation .label {
+color: red
 }

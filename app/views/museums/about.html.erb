@@ -1,1 +1,68 @@
-<h1>About</h1>
+<% @extra_headers="<link rel=”transformation” href=”http://cms−wg.sti2.org/TR/d12/v0.1/20081202/xslt/hrests.xslt” />".html_safe %>
+<% @head_attributes="profile=”http://www.w3.org/2003/g/data−view”".html_safe %>
+<div class='service' id='svc'>
+	<h1>
+		<span class='label'>Museums Web Service</span>
+	</h1>
+	This service provide a system for booking reservations for the <%= link_to 'museums',"http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei",{:rel => 'model'} %> in Florence.
+
+	<div class='operation' id='indexMuseums'>
+		<h2>
+			<span class='label'>List Museums</span>
+		</h2>
+		<span class='method'>GET</span> all museums available in Florence.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'><%= museums_url%>.xml?page={page_num}</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p><code class='parameter'>page</code> (Optional) : The page number to fetch. Defaults to first page.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service does <b>not</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+			<code>&lt;museums&gt; &lt;<a rel='model' href='http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei'><code class='parameter'>museum</code></a>&gt;   &lt;name&gt;VILLA_MEDICEA_DI_CAREGGI&lt;/name&gt; &lt;uri&gt;http://localhost:3000/museums/VILLA_MEDICEA_DI_CAREGGI&lt;/uri&gt;   &lt;/museum&gt;  &lt;museum&gt;    &lt;name&gt;MUSEO_DELL'OPERA_DEL_DUOMO&lt;/name&gt;    &lt;uri&gt;http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO&lt;/uri&gt;   &lt;/museum&gt;&lt;/museums&gt;</code>
+			(<%= link_to 'lifting',"#{root_url}/museums_lifting.xsl"%>)
+		</div>
+	</div>
+	<div class='operation' id='showMuseum'>
+		<h2>
+			<span class='label'>Show Museum</span>
+		</h2>
+		<span class='method'>GET</span> a specific musem by name.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'><%= museums_url%>/{museum_name}.xml</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p><code class='parameter'>museum_name</code> : The name of the museum you want to get.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service does <b>not</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code>&lt;<a rel='model' href='http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei'><code class='parameter'>museum</code></a>&gt; 
+  	&lt;name&gt;MUSEO DELL'OPERA DEL DUOMO&lt;/name&gt;  &lt;phone&gt;055 230885&lt;/phone&gt;  &lt;address&gt;Piazza del Duomo n.9&lt;/address&gt;
+	  &lt;webLink&gt;www.operaduomo.firenze.it&lt;/webLink&gt;&lt;/museum&gt;</code>
+			(<%= link_to 'lifting',"#{root_url}/museum_lifting.xsl"%>)
+		</div>
+</div>
