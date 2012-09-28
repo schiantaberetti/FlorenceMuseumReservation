@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:sawsdl="http://www.w3.org/ns/sawsdl#" xmlns:hr="http://www.wsmo.org/ns/hrests#" xmlns:wsl="http://www.wsmo.org/ns/wsmo-lite#" xmlns:msm="http://cms-wg.sti2.org/ns/minimal-service-model#">
+  <msm:Service rdf:ID="svc">
+    <rdfs:label>Museums Web Service</rdfs:label>
+    <msm:hasOperation>
+      <msm:Operation rdf:ID="indexMuseums">
+        <rdfs:label>List Museums</rdfs:label>
+        <hr:hasMethod>GET</hr:hasMethod>
+        <hr:hasAddress rdf:datatype="http://www.wsmo.org/ns/hrests#URITemplate">http://localhost:3000/museums.xml?page={page_num}</hr:hasAddress>
+        <msm:hasInput>
+          <msm:MessageContent>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+          </msm:MessageContent>
+        </msm:hasInput>
+        <msm:hasOutput>
+          <msm:MessageContent>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+            <sawsdl:modelReference rdf:resource="http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei"/>
+            <sawsdl:liftingSchemaMapping rdf:resource="http://localhost:3000//museums_lifting.xsl"/>
+          </msm:MessageContent>
+        </msm:hasOutput>
+      </msm:Operation>
+    </msm:hasOperation>
+    <msm:hasOperation>
+      <msm:Operation rdf:ID="showMuseum">
+        <rdfs:label>Show Museum</rdfs:label>
+        <hr:hasMethod>GET</hr:hasMethod>
+        <hr:hasAddress rdf:datatype="http://www.wsmo.org/ns/hrests#URITemplate">http://localhost:3000/museums/{museum_name}.xml</hr:hasAddress>
+        <msm:hasInput>
+          <msm:MessageContent>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+          </msm:MessageContent>
+        </msm:hasInput>
+        <msm:hasOutput>
+          <msm:MessageContent>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+            <sawsdl:modelReference rdf:resource="http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei"/>
+            <sawsdl:liftingSchemaMapping rdf:resource="http://localhost:3000//museum_lifting.xsl"/>
+          </msm:MessageContent>
+        </msm:hasOutput>
+      </msm:Operation>
+    </msm:hasOperation>
+    <msm:hasOperation>
+      <msm:Operation rdf:ID="createUser">
+        <rdfs:label>Create User</rdfs:label>
+        <hr:hasMethod>POST</hr:hasMethod>
+        <hr:hasAddress rdf:datatype="http://www.wsmo.org/ns/hrests#URITemplate">http://localhost:3000/users.xml?name={user_name}&amp;email={user_email}&amp;password={user_password}&amp;password_confirmation={user_password}</hr:hasAddress>
+        <msm:hasInput>
+          <msm:MessageContent>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+          </msm:MessageContent>
+        </msm:hasInput>
+        <msm:hasOutput>
+          <msm:MessageContent/>
+        </msm:hasOutput>
+      </msm:Operation>
+    </msm:hasOperation>
+    <msm:hasOperation>
+      <msm:Operation rdf:ID="showUser">
+        <rdfs:label>Show User</rdfs:label>
+        <hr:hasMethod>GET</hr:hasMethod>
+        <hr:hasAddress rdf:datatype="http://www.wsmo.org/ns/hrests#URITemplate">http://localhost:3000/profile.xml</hr:hasAddress>
+        <msm:hasInput>
+          <msm:MessageContent/>
+        </msm:hasInput>
+        <msm:hasOutput>
+          <msm:MessageContent/>
+        </msm:hasOutput>
+      </msm:Operation>
+    </msm:hasOperation>
+    <msm:hasOperation>
+      <msm:Operation rdf:ID="createReservation">
+        <rdfs:label>Create Reservation</rdfs:label>
+        <hr:hasMethod>POST</hr:hasMethod>
+        <hr:hasAddress rdf:datatype="http://www.wsmo.org/ns/hrests#URITemplate">http://localhost:3000/reservations.xml?museum={museum_name}&amp;date={date_of_visit}&amp;num_of_pipl={number_of_people}</hr:hasAddress>
+        <msm:hasInput>
+          <msm:MessageContent>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+          </msm:MessageContent>
+        </msm:hasInput>
+        <msm:hasOutput>
+          <msm:MessageContent/>
+        </msm:hasOutput>
+      </msm:Operation>
+    </msm:hasOperation>
+    <msm:hasOperation>
+      <msm:Operation rdf:ID="indexReservations">
+        <rdfs:label>Index Reservation</rdfs:label>
+        <hr:hasMethod>GET</hr:hasMethod>
+        <hr:hasAddress rdf:datatype="http://www.wsmo.org/ns/hrests#URITemplate">http://localhost:3000/reservations.xml</hr:hasAddress>
+        <msm:hasInput>
+          <msm:MessageContent/>
+        </msm:hasInput>
+        <msm:hasOutput>
+          <msm:MessageContent/>
+        </msm:hasOutput>
+      </msm:Operation>
+    </msm:hasOperation>
+    <msm:hasOperation>
+      <msm:Operation rdf:ID="showReservation">
+        <rdfs:label>Show Reservation</rdfs:label>
+        <hr:hasMethod>GET</hr:hasMethod>
+        <hr:hasAddress rdf:datatype="http://www.wsmo.org/ns/hrests#URITemplate">http://localhost:3000/reservations/{reservation_id}.xml/</hr:hasAddress>
+        <msm:hasInput>
+          <msm:MessageContent>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+          </msm:MessageContent>
+        </msm:hasInput>
+        <msm:hasOutput>
+          <msm:MessageContent/>
+        </msm:hasOutput>
+      </msm:Operation>
+    </msm:hasOperation>
+    <msm:hasOperation>
+      <msm:Operation rdf:ID="deleteReservation">
+        <rdfs:label>Delete Reservation</rdfs:label>
+        <hr:hasMethod>DELETE</hr:hasMethod>
+        <hr:hasAddress rdf:datatype="http://www.wsmo.org/ns/hrests#URITemplate">http://localhost:3000/reservations/{reservation_id}.xml/</hr:hasAddress>
+        <msm:hasInput>
+          <msm:MessageContent>
+            <msm:hasOptionalPart>
+              <msm:MessagePart/>
+            </msm:hasOptionalPart>
+          </msm:MessageContent>
+        </msm:hasInput>
+        <msm:hasOutput>
+          <msm:MessageContent/>
+        </msm:hasOutput>
+      </msm:Operation>
+    </msm:hasOperation>
+  </msm:Service>
+</rdf:RDF>
