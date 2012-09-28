@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head profile='http://www.w3.org/2003/g/data−view' >
+  <title>Museums</title>
+	<link rel='transformation' href='https://florence-museums.herokuapp.com//hrests.xslt' />
+  <link href="/assets/application-f8be609a51694a0c3ffbf932c4e1655b.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="/assets/application-f90f3de2fe8898cc6c7cfd51f7ad1fc5.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="WIKbxtLLzrpyjC8M6OyCgLL6ADyxhSVEwl9miWcLLao=" name="csrf-token" />
+</head>
+<body>
+	<div id='navbar'>
+	<ul class='menu'>
+		<li><a href="/">Home</a></li>
+		<li><a href="/users/new">Signup</a></li>
+		<li><a href="/profile">Profile</a></li>
+		<li><a href="/about">About</a></li>
+	</ul>
+</div>
+
+	<hr/>
+	<div id='container'>
+		<div class='service' id='svc'>
+	<h1>
+		<span class='label'>Museums Web Service</span>
+	</h1>
+	This service provide a system for booking reservations for the <a href="http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei" data-rel="model">museums</a> in Florence.
+
+	<div class='operation' id='indexMuseums'>
+		<h2>
+			<span class='label'>List Museums</span>
+		</h2>
+		<span class='method'>GET</span> all museums available in Florence.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'>https://florence-museums.herokuapp.com/museums.xml?page={page_num}</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p><code class='parameter'>page</code> (Optional) : The page number to fetch. Defaults to first page.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service does <b>not</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+			<code>&lt;museums&gt; &lt;<a rel='model' href='http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei'><code class='parameter'>museum</code></a>&gt;   &lt;name&gt;VILLA_MEDICEA_DI_CAREGGI&lt;/name&gt; &lt;uri&gt;http://localhost:3000/museums/VILLA_MEDICEA_DI_CAREGGI&lt;/uri&gt;   &lt;/museum&gt;  &lt;museum&gt;    &lt;name&gt;MUSEO_DELL'OPERA_DEL_DUOMO&lt;/name&gt;    &lt;uri&gt;http://localhost:3000/museums/MUSEO_DELL'OPERA_DEL_DUOMO&lt;/uri&gt;   &lt;/museum&gt;&lt;/museums&gt;</code>
+			(<a rel='lifting' href='https://florence-museums.herokuapp.com//museums_lifting.xsl'>lifting</a>)
+		</div>
+	</div>
+	<div class='operation' id='showMuseum'>
+		<h2>
+			<span class='label'>Show Museum</span>
+		</h2>
+		<span class='method'>GET</span> a specific musem by name.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'>https://florence-museums.herokuapp.com/museums/{museum_name}.xml</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p><code class='parameter'>museum_name</code> : The name of the museum you want to get.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service does <b>not</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code>&lt;<a rel='model' href='http://sr-vm091-opend.comune.fi.it:8080/resource/data/musei'><code class='parameter'>museum</code></a>&gt; 
+  	&lt;name&gt;MUSEO DELL'OPERA DEL DUOMO&lt;/name&gt;  &lt;phone&gt;055 230885&lt;/phone&gt;  &lt;address&gt;Piazza del Duomo n.9&lt;/address&gt;
+	  &lt;webLink&gt;www.operaduomo.firenze.it&lt;/webLink&gt;&lt;/museum&gt;</code>
+			(<a rel='lifting' href='https://florence-museums.herokuapp.com//museum_lifting.xsl'>lifting</a>)
+		</div>
+	</div>
+	<div class='operation' id='createUser'>
+		<h2>
+			<span class='label'>Create User</span>
+		</h2>
+		<span class='method'>POST</span> a new user.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'>https://florence-museums.herokuapp.com/users.xml?name={user_name}&amp;email={user_email}&amp;password={user_password}&amp;password_confirmation={user_password}</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p><code class='parameter'>user_name</code> : The name of the new user.</p>
+			<p><code class='parameter'>user_email</code> : The email of the new user.</p>
+			<p><code class='parameter'>user_password</code> : The password of the new user.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service does <b>not</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code>&lt;notifications&gt;&lt;notification&gt; &lt;msg&gt;success&lt;/msg&gt;&lt;description&gt;user created&lt;/description&gt; &lt;/notification&gt;&lt;/notifications&gt;</code>
+		</div>
+	</div>
+	<div class='operation' id='showUser'>
+		<h2>
+			<span class='label'>Show User</span>
+		</h2>
+		<span class='method'>GET</span> a specific user.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'>https://florence-museums.herokuapp.com/profile.xml</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p>No parameters required.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service <b>does</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code>&lt;user&gt;  &lt;name&gt;luco&lt;/name&gt;  &lt;email&gt;baldo@lilik.it&lt;/email&gt;  &lt;reservations&gt;http://localhost:3000/reservations&lt;/reservations&gt;&lt;/user&gt;
+		</code>
+		</div>
+	</div>
+	<div class='operation' id='createReservation'>
+		<h2>
+			<span class='label'>Create Reservation</span>
+		</h2>
+		<span class='method'>POST</span> a new reservation.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'>https://florence-museums.herokuapp.com/reservations.xml?museum={museum_name}&amp;date={date_of_visit}&amp;num_of_pipl={number_of_people}</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p>	<code class='parameter'>museum_name</code> : The name of the museum you want to visit.</p>
+			<p>	<code class='parameter'>date_of_visit</code> : The date of your visit (dd-mm-yyyy).</p>
+			<p>				<code class='parameter'>number_of_people</code> : The number of visitors.	</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service <b>does</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code>&lt;notifications&gt;  &lt;notification&gt;    &lt;msg&gt;success&lt;/msg&gt;    &lt;description&gt;reservation created&lt;/description&gt;  &lt;/notification&gt;&lt;/notifications&gt;		</code>
+		</div>
+	</div>
+	<div class='operation' id='indexReservations'>
+		<h2>
+			<span class='label'>Index Reservation</span>
+		</h2>
+		<span class='method'>GET</span> the reservations.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'>https://florence-museums.herokuapp.com/reservations.xml</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p>No parameters required.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service <b>does</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code>&lt;reservations&gt;  &lt;reservation&gt;http://localhost:3000/reservations/2&lt;/reservation&gt;  &lt;reservation&gt;http://localhost:3000/reservations/3&lt;/reservation&gt;&lt;/reservations&gt;		</code>
+		</div>
+	</div>
+	<div class='operation' id='showReservation'>
+		<h2>
+			<span class='label'>Show Reservation</span>
+		</h2>
+		<span class='method'>GET</span> one reservation.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'>https://florence-museums.herokuapp.com/reservations/{reservation_id}.xml/</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p>	<code class='parameter'>reservation_id</code> : The unique identifier of the registration.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service <b>does</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code>&lt;reservation&gt;  &lt;museum&gt;http://localhost:3000/museums/MUSEO NAZIONALE ALINARI DELLA FOTOGRAFIA&lt;/museum&gt;  &lt;date&gt;22-09-2012&lt;/date&gt;  &lt;num_of_pipl&gt;4&lt;/num_of_pipl&gt;  &lt;user&gt;http://localhost:3000/users/2&lt;/user&gt;&lt;/reservation&gt;		</code>
+		</div>
+	</div>
+	<div class='operation' id='deleteReservation'>
+		<h2>
+			<span class='label'>Delete Reservation</span>
+		</h2>
+		<span class='method'>DELETE</span> one reservation.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'>https://florence-museums.herokuapp.com/reservations/{reservation_id}.xml/</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p>	<code class='parameter'>reservation_id</code> : The unique identifier of the registration.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service <b>does</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code>&lt;notifications&gt;  &lt;notification&gt;    &lt;msg&gt;success&lt;/msg&gt;    &lt;description&gt;reservation deleted&lt;/description&gt;  &lt;/notification&gt;&lt;/notifications&gt;		</code>
+		</div>
+	</div>
+</div>
+
+	</div>
+</body>
+</html>
+

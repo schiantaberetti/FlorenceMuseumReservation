@@ -1,0 +1,21 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>folco ferlinghetti</foaf:name>
+<foaf:title>Mr</foaf:title>
+<foaf:givenname>folco</foaf:givenname>
+<foaf:family_name>ferlinghetti</foaf:family_name>
+<foaf:nick>folco.f</foaf:nick>
+<foaf:mbox_sha1sum>25b739f76b798297ee52c26d30a04a2a0425c648</foaf:mbox_sha1sum>
+<foaf:workplaceHomepage rdf:resource="https://florence-museums.herokuapp.com"/>
+<foaf:workInfoHomepage rdf:resource="work"/></foaf:Person>
+</rdf:RDF>
