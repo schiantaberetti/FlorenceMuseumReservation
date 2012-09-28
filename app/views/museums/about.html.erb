@@ -65,4 +65,182 @@
 	  &lt;webLink&gt;www.operaduomo.firenze.it&lt;/webLink&gt;&lt;/museum&gt;</code>
 			(<%= link_to 'lifting',"#{root_url}/museum_lifting.xsl"%>)
 		</div>
+	</div>
+	<div class='operation' id='createUser'>
+		<h2>
+			<span class='label'>Create User</span>
+		</h2>
+		<span class='method'>POST</span> a new user.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'><%= "#{users_url}.xml?name={user_name}&email={user_email}&password={user_password}&password_confirmation={user_password}"%></code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p><code class='parameter'>user_name</code> : The name of the new user.</p>
+			<p><code class='parameter'>user_email</code> : The email of the new user.</p>
+			<p><code class='parameter'>user_password</code> : The password of the new user.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service does <b>not</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code><%= "<notifications><notification> <msg>success</msg><description>user created</description> </notification></notifications>" %></code>
+		</div>
+	</div>
+	<div class='operation' id='showUser'>
+		<h2>
+			<span class='label'>Show User</span>
+		</h2>
+		<span class='method'>GET</span> a specific user.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+				<code class='address'><%= profile_url%>.xml</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p>No parameters required.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service <b>does</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code><%= "<user>  <name>luco</name>  <email>baldo@lilik.it</email>  <reservations>http://localhost:3000/reservations</reservations></user>" %>
+		</code>
+		</div>
+	</div>
+	<div class='operation' id='createReservation'>
+		<h2>
+			<span class='label'>Create Reservation</span>
+		</h2>
+		<span class='method'>POST</span> a new reservation.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+			</p>
+				<code class='address'><%= reservations_url%>.xml?museum={museum_name}&amp;date={date_of_visit}&amp;num_of_pipl={number_of_people}</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p>	<code class='parameter'>museum_name</code> : The name of the museum you want to visit.</p>
+			<p>	<code class='parameter'>date_of_visit</code> : The date of your visit (dd-mm-yyyy).</p>
+			<p>				<code class='parameter'>number_of_people</code> : The number of visitors.	</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service <b>does</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code><%= "<notifications>  <notification>    <msg>success</msg>    <description>reservation created</description>  </notification></notifications>" %>		</code>
+		</div>
+	</div>
+	<div class='operation' id='indexReservations'>
+		<h2>
+			<span class='label'>Index Reservation</span>
+		</h2>
+		<span class='method'>GET</span> the reservations.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+			</p>
+				<code class='address'><%= reservations_url%>.xml</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p>No parameters required.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service <b>does</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code><%= "<reservations>  <reservation>http://localhost:3000/reservations/2</reservation>  <reservation>http://localhost:3000/reservations/3</reservation></reservations>" %>		</code>
+		</div>
+	</div>
+	<div class='operation' id='showReservation'>
+		<h2>
+			<span class='label'>Show Reservation</span>
+		</h2>
+		<span class='method'>GET</span> one reservation.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+			</p>
+				<code class='address'><%= reservations_url%>/{reservation_id}.xml/</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p>	<code class='parameter'>reservation_id</code> : The unique identifier of the registration.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service <b>does</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code><%= "<reservation>  <museum>http://localhost:3000/museums/MUSEO NAZIONALE ALINARI DELLA FOTOGRAFIA</museum>  <date>22-09-2012</date>  <num_of_pipl>4</num_of_pipl>  <user>http://localhost:3000/users/2</user></reservation>" %>		</code>
+		</div>
+	</div>
+	<div class='operation' id='deleteReservation'>
+		<h2>
+			<span class='label'>Delete Reservation</span>
+		</h2>
+		<span class='method'>DELETE</span> one reservation.
+		
+		<div>
+			<h3>Example Path</h3>
+			<p>XML: 
+			</p>
+				<code class='address'><%= reservations_url%>/{reservation_id}.xml/</code>
+			</p>
+		</div>
+
+		<div class='input'>
+			<h3>Params</h3>
+			<p>	<code class='parameter'>reservation_id</code> : The unique identifier of the registration.</p>
+		</div>
+	
+		<div>
+			<h3>Auth</h3>
+			<p>This service <b>does</b> require authentication.</p>
+		</div>
+
+		<div class='output'>
+			<h3>Sample Response</h3>
+		<code><%= "<notifications>  <notification>    <msg>success</msg>    <description>reservation deleted</description>  </notification></notifications>" %>		</code>
+		</div>
+	</div>
 </div>

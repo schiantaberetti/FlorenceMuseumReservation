@@ -1,4 +1,4 @@
-xml.inspect!
+xml.instruct!
 xml.notifications do
 	flash.each do |key,msg|
 		xml.notification do
